@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+<html lang="ru">          
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ text }}</h1>
+    <header>
+      {% include 'includes/header.html' %}
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    <footer>
+      <h1>{{ gr_text }}</h1>
+      {% include 'posts/group_list.html' %} 
+    </footer>
+  </body>
+</html>  
